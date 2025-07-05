@@ -1,0 +1,16 @@
+{
+  "company": {
+    "logo": {
+      "src": "/biotech-logo.svg",
+      "alt": "Biotech Logo"
+    }
+  },
+  "navigation": [
+    { "label": "Products", "href": "/products" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Applications", "href": "/applications" },
+    { "label": "Resources", "href": "/resources" },
+    { "label": "Support", "href": "/support" },
+    { "label": "About", "href": "/about" }
+  ]
+}

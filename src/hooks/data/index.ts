@@ -1,0 +1,1 @@
+export { useHeaderData } from "./useHeaderData";
