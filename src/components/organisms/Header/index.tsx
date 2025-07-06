@@ -1,7 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useHeaderData } from "@/hooks";
+import { Flex, Container } from "@/components";
+import { LeftSection } from "./LeftSection";
+import { RightSection } from "./RightSection";
 
 export const Header = () => {
   const { data, error, loading } = useHeaderData();
@@ -10,26 +12,19 @@ export const Header = () => {
   if (error || !data) return <header>Error loading header</header>;
 
   return (
-    <header>
-      <div>
-        <Image
-          src={data.company.logo.src}
-          alt={data.company.logo.alt}
-          width={120}
-          height={40}
-          priority
-        />
-      </div>
+    <Container.Root
+      as="header"
+      outerS={{ position: "sticky", top: 0, py: [16], bgc: "white" }}
+    >
+      <Flex.Root s={{ jc: "space-between", ai: "center" }}>
+        <Flex.Item>
+          <LeftSection data={data} />
+        </Flex.Item>
 
-      <nav>
-        <ul>
-          {data.navigation.map((item) => (
-            <li key={item.href}>
-              <a href={item.href}>{item.label}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
+        <Flex.Item>
+          <RightSection />
+        </Flex.Item>
+      </Flex.Root>
+    </Container.Root>
   );
 };

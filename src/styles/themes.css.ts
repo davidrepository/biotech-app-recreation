@@ -2,23 +2,34 @@ import { createThemeContract, createTheme } from "@vanilla-extract/css";
 
 export const breakpoints = {
   mobile: 0,
-  tablet: 600,
-  desktop: 1200,
-  tv: 1800,
+  tablet: 1100,
+  desktop: 1500,
+  tv: 2100,
 };
 
-const whiteness = {
+const palette = {
+  primary: "#0074FF",
+
   white: "#FFFFFF",
-};
-
-const blackness = {
   black: "#000000",
+
+  gray1: "#111111",
+  gray2: "#191919",
+  gray3: "#222222",
+  gray4: "#2A2A2A",
+  gray5: "#313131",
+  gray6: "#3A3A3A",
+  gray7: "#484848",
+  gray8: "#606060",
+  gray9: "#6E6E6E",
+  gray10: "#7B7B7B",
+  gray11: "#B4B4B4",
+  gray12: "#EEEEEE",
 };
 
 const colors = {
   transparent: "transparent",
-  ...whiteness,
-  ...blackness,
+  ...palette,
 };
 
 export const vars = createThemeContract({
@@ -53,12 +64,46 @@ export const vars = createThemeContract({
     240: "",
     280: "",
     300: "",
+
+    auto: "",
+  },
+  size: {
+    48: "",
+    1200: "",
+    full: "",
+  },
+  fontSize: {
+    16: "",
+  },
+  lineHeight: {
+    16: "",
+  },
+  fontWeight: {
+    400: "",
+    500: "",
+    600: "",
   },
   colors: {
+    primary: "",
+
     background: "",
     transparent: "",
+
     white: "",
     black: "",
+
+    gray1: "",
+    gray2: "",
+    gray3: "",
+    gray4: "",
+    gray5: "",
+    gray6: "",
+    gray7: "",
+    gray8: "",
+    gray9: "",
+    gray10: "",
+    gray11: "",
+    gray12: "",
   },
 });
 
@@ -94,6 +139,25 @@ const commonVars = {
     240: "24rem",
     280: "28rem",
     300: "30rem",
+
+    auto: "auto",
+  },
+  size: {
+    48: "4.8rem",
+    1200: "120rem",
+
+    full: "100%",
+  },
+  fontSize: {
+    16: "1.6rem",
+  },
+  lineHeight: {
+    16: "1.6rem",
+  },
+  fontWeight: {
+    400: "400",
+    500: "500",
+    600: "600",
   },
 };
 

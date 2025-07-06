@@ -23,6 +23,24 @@ const responsiveProperties = defineProperties({
     right: vars.space,
     bottom: vars.space,
     left: vars.space,
+
+    width: vars.size,
+    minWidth: vars.size,
+    maxWidth: vars.size,
+
+    height: vars.size,
+    minHeight: vars.size,
+    maxHeight: vars.size,
+
+    fontSize: vars.fontSize,
+    lineHeight: vars.lineHeight,
+    fontWeight: vars.fontWeight,
+
+    justifyContent: ["space-between", "center"],
+
+    alignItems: ["center"],
+
+    flexDirection: ["row", "column"],
   },
   shorthands: {
     p: ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"],
@@ -40,14 +58,51 @@ const responsiveProperties = defineProperties({
     mr: ["marginRight"],
     mb: ["marginBottom"],
     ml: ["marginLeft"],
+
+    w: ["width"],
+    minw: ["minWidth"],
+    maxw: ["maxWidth"],
+
+    h: ["height"],
+    minh: ["minHeight"],
+    maxh: ["maxHeight"],
+
+    jc: ["justifyContent"],
+
+    ai: ["alignItems"],
+
+    flexd: ["flexDirection"],
   },
 });
 
 const unresposiveProperties = defineProperties({
-  properties: {},
+  properties: {
+    display: ["flex", "block"],
+    position: ["sticky", "relative", "absolute"],
+    cursor: ["pointer"],
+  },
+});
+
+const colorProperties = defineProperties({
+  conditions: {
+    light: { "@media": "(prefers-color-scheme: light)" },
+    dark: { "@media": "(prefers-color-scheme: dark)" },
+    hover: { selector: "&:hover" },
+    focus: { selector: "&:focus" },
+    placeholder: { selector: "&::placeholder" },
+  },
+  defaultCondition: ["light", "dark"],
+  properties: {
+    color: vars.colors,
+    backgroundColor: vars.colors,
+  },
+  shorthands: {
+    bgc: ["backgroundColor"],
+  },
 });
 
 export const sprinkles = createSprinkles(
   responsiveProperties,
-  unresposiveProperties
+  unresposiveProperties,
+  colorProperties
 );

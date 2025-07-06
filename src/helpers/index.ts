@@ -1,2 +1,2 @@
-export * from "./combineClassnames";
-export * from "./transformBreakpoints";
+export { combineClassnames } from "./combineClassnames";
+export { transformBreakpoints } from "./transformBreakpoints";
