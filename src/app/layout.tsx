@@ -4,6 +4,7 @@ import { getHeaderData } from "@/lib";
 import { HEADER_DATA_URL } from "@/constants";
 import "@fortawesome/fontawesome-svg-core";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import { TopBar } from "@/components/organisms/TopBar";
 config.autoAddCss = false;
 
 export default async function RootLayout({
@@ -18,6 +19,7 @@ export default async function RootLayout({
       <body>
         <DataProvider fallback={{ [HEADER_DATA_URL]: headerData }}>
           <ThemeProvider>
+            <TopBar />
             <Header />
             {children}
           </ThemeProvider>

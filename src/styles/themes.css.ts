@@ -35,6 +35,7 @@ const colors = {
 export const vars = createThemeContract({
   space: {
     0: "",
+    1: "",
     2: "",
     4: "",
     6: "",
@@ -65,17 +66,26 @@ export const vars = createThemeContract({
     280: "",
     300: "",
 
+    "-24": "",
+
+    half: "",
+    full: "",
     auto: "",
   },
   size: {
+    1: "",
+    14: "", // TopBar Separator
     48: "",
     1200: "",
+
     full: "",
   },
   fontSize: {
+    14: "",
     16: "",
   },
   lineHeight: {
+    14: "",
     16: "",
   },
   fontWeight: {
@@ -105,11 +115,15 @@ export const vars = createThemeContract({
     gray11: "",
     gray12: "",
   },
+  transform: {
+    "-halfY": "",
+  },
 });
 
 const commonVars = {
   space: {
     0: "0rem",
+    1: "0.1rem",
     2: "0.2rem",
     4: "0.4rem",
     6: "0.6rem",
@@ -140,24 +154,35 @@ const commonVars = {
     280: "28rem",
     300: "30rem",
 
+    "-24": "-2.4rem",
+
+    half: "50%",
+    full: "100%",
     auto: "auto",
   },
   size: {
+    1: ".1rem",
+    14: "1.4rem", // TopBar Separator
     48: "4.8rem",
     1200: "120rem",
 
     full: "100%",
   },
   fontSize: {
+    14: "1.4rem",
     16: "1.6rem",
   },
   lineHeight: {
+    14: "1.4rem",
     16: "1.6rem",
   },
   fontWeight: {
     400: "400",
     500: "500",
     600: "600",
+  },
+  transform: {
+    "-halfY": "translateY(-50%)",
   },
 };
 

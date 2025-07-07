@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { breakpoints } from "@/styles";
 import { MediaQueryMatches } from "./useMediaQuery.types";

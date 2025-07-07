@@ -1,3 +1,3 @@
-export * from "./providers";
-export * from "./ui";
-export * from "./header";
+export * from "./ui.types";
+export * from "./header.types";
+export * from "./topBar.types";

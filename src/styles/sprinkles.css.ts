@@ -36,6 +36,8 @@ const responsiveProperties = defineProperties({
     lineHeight: vars.lineHeight,
     fontWeight: vars.fontWeight,
 
+    transform: vars.transform,
+
     justifyContent: ["space-between", "center"],
 
     alignItems: ["center"],

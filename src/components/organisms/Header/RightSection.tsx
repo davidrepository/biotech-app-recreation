@@ -22,7 +22,7 @@ export const RightSection = () => {
             Login
           </Link>
 
-          <Link href="#" square v={{ spacing: "none" }}>
+          <Link href="#" square noSpacing>
             <FontAwesomeIcon icon={faHeart} />
           </Link>
         </>

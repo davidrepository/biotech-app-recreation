@@ -1,0 +1,23 @@
+{
+  "promo": {
+    "text": "Earn Free Yeti® Gear for a Limited Time with Your Order",
+    "cta": {
+      "label": "Learn More →",
+      "href": "/promo"
+    }
+  },
+  "linksRight": [
+    {
+      "label": "1-999-888-7777",
+      "href": "tel:19998887777"
+    },
+    {
+      "label": "Quick Order",
+      "href": "/quick-order"
+    },
+    {
+      "label": "Order Status",
+      "href": "/order-status"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ export const LeftSection = ({ data }: LeftSectionProps) => {
   return (
     <Flex.Root s={{ ai: "center", gap: 32 }}>
       <Flex.Item>
-        <Link href="#" v={{ spacing: "none" }}>
+        <Link href="#" noSpacing>
           <Image
             src={data.company.logo.src}
             alt={data.company.logo.alt}

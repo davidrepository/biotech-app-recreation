@@ -1,5 +1,5 @@
 import useSWR from "swr";
-import type { HeaderData } from "@/types";
+import { HeaderData } from "@/types";
 import { HEADER_DATA_URL } from "@/constants";
 
 export const useHeaderData = () => {
