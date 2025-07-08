@@ -3,10 +3,11 @@ import { ProductProps } from "./productSection.types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
-export const ProductCard = ({ productData }: ProductProps) => {
+export const ProductCard = ({ productData, ...rest }: ProductProps) => {
   return (
     <Card.Root
       s={{ gap: [20, 20, 32], ai: "flex-start", flexd: ["column", "row"] }}
+      {...rest}
     >
       <Card.Image
         src={productData?.image.src}

@@ -5,4 +5,5 @@ export interface CardProps extends BoxProps {}
 
 export interface CardImageProps extends ImageProps, BoxProps {
   link?: boolean;
+  full?: boolean;
 }

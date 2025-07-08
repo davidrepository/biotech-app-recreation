@@ -5,6 +5,7 @@ import {
   ServiceSection,
   Separator,
 } from "@/components";
+import { BlogSection } from "@/components/organisms/BlogSection";
 
 import "@/styles/global.css";
 
@@ -17,6 +18,8 @@ export default function Home() {
       <ProductSection />
       <Separator withContainer />
       <ServiceSection />
+      <Separator withContainer />
+      <BlogSection />
     </>
   );
 }

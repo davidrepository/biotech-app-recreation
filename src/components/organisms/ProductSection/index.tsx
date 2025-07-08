@@ -21,11 +21,11 @@ export const ProductSection = () => {
           </H2>
         </Grid.Item>
         <Grid.Item s={{ spanx: ["unset", "unset", "2.."] }}>
-          <Flex.Root s={{ flexd: "column", gap: [20, 20, 40] }}>
+          <Flex.Root as="li" s={{ flexd: "column", gap: [20, 20, 40] }}>
             {data?.products.map((product, index) => (
               <Fragment key={index}>
-                <ProductCard productData={product} />
-                {index < data.products.length - 1 && <Separator />}
+                <ProductCard as="li" productData={product} />
+                {index < data.products.length - 1 && <Separator as="li" />}
               </Fragment>
             ))}
           </Flex.Root>

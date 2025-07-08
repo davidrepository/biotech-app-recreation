@@ -14,9 +14,9 @@ export const ServiceSection = () => {
     <Container.Root as="section" s={{ py: [60, 80] }}>
       <Flex.Root s={{ flexd: "column", gap: [20] }}>
         <H2>{data?.heading}</H2>
-        <Grid.Root s={{ cols: [1, 3] }}>
+        <Grid.Root as="ul" s={{ cols: [1, 3] }}>
           {data?.services.map((service, index) => (
-            <Grid.Item key={index}>
+            <Grid.Item key={index} as="li">
               <ServiceCard serviceData={service} />
             </Grid.Item>
           ))}

@@ -23,10 +23,17 @@ export const typography = recipe({
         fontSize: 16,
         lineHeight: 28,
       }),
+      caption: s({
+        fontSize: 14,
+        lineHeight: 14,
+      }),
     },
     tone: {
       light: s({
         color: "white",
+      }),
+      gray: s({
+        color: "gray10",
       }),
     },
   },

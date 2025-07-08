@@ -1,9 +1,13 @@
 import { Link, Card, Lead, H3, P } from "@/components";
 import { OfferProps } from "./offerSection.types";
 
-export const OfferCard = ({ offerData }: OfferProps) => {
+export const OfferCard = ({ offerData, ...rest }: OfferProps) => {
   return (
-    <Link href={offerData?.href ?? "#"} s={{ color: { hover: "primary" } }}>
+    <Link
+      href={offerData?.href ?? "#"}
+      s={{ color: { hover: "primary" } }}
+      {...rest}
+    >
       <Card.Root s={{ p: [20] }}>
         <Card.Body>
           <Lead.Root s={{ gap: 16 }}>

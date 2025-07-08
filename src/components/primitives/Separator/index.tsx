@@ -1,13 +1,16 @@
 import { Box, Container } from "@/components";
+import { SeparatorProps } from "./separator.types";
 
-const Sep = () => <Box s={{ h: 1, w: "full", bgc: "gray12" }} />;
+const Sep = ({ ...rest }: SeparatorProps) => (
+  <Box s={{ h: 1, w: "full", bgc: "gray12" }} {...rest} />
+);
 
-export const Separator = ({ withContainer }: any) => {
+export const Separator = ({ withContainer, ...rest }: SeparatorProps) => {
   return withContainer ? (
     <Container.Root>
-      <Sep />
+      <Sep {...rest} />
     </Container.Root>
   ) : (
-    <Sep />
+    <Sep {...rest} />
   );
 };

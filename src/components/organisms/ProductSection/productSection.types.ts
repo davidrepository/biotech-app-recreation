@@ -1,5 +1,5 @@
-import { Product } from "@/types";
+import { BoxProps, Product } from "@/types";
 
-export interface ProductProps {
+export interface ProductProps extends BoxProps {
   productData: Product;
 }

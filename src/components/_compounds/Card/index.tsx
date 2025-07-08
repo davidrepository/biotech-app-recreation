@@ -6,11 +6,18 @@ const CardRoot = ({ children, ...rest }: CardProps) => {
   return <Flex.Root {...rest}>{children}</Flex.Root>;
 };
 
-const CardImage = ({ src, alt, link, href = "#", ...rest }: CardImageProps) => {
+const CardImage = ({
+  src,
+  alt,
+  link,
+  full,
+  href = "#",
+  ...rest
+}: CardImageProps) => {
   return (
     <Box
       s={{
-        w: ["full", "40%", "30%"],
+        w: full ? ["full"] : ["full", "40%", "30%"],
         maxw: ["unset", 420],
         position: "relative",
         aspectRatio: "1/1",

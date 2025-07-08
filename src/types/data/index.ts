@@ -4,3 +4,4 @@ export * from "./heroSection.types";
 export * from "./offerSection.types";
 export * from "./productSection.types";
 export * from "./serviceSection.types";
+export * from "./blogSection.types";

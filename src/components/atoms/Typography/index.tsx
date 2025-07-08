@@ -1,6 +1,7 @@
 import { Box } from "@/components/primitives";
 import { TypographyProps } from "./typography.types";
 import { typography } from "./typography.css";
+import { Flex } from "@/components/_compounds";
 
 const Typography = ({ children, ...rest }: TypographyProps) => {
   return (
@@ -37,6 +38,26 @@ export const H3 = ({ children, v, ...rest }: TypographyProps) => {
 export const P = ({ children, v, ...rest }: TypographyProps) => {
   return (
     <Typography as="p" v={{ variant: "p", ...v }} {...rest}>
+      {children}
+    </Typography>
+  );
+};
+
+export const Caption = ({
+  withDash,
+  v,
+  children,
+  ...rest
+}: TypographyProps) => {
+  return withDash ? (
+    <Flex.Root s={{ ai: "center", gap: 8 }}>
+      <Box s={{ h: 1, w: 30, bgc: "gray10" }} />
+      <Typography as="span" v={{ variant: "caption", ...v }} {...rest}>
+        {children}
+      </Typography>
+    </Flex.Root>
+  ) : (
+    <Typography as="span" v={{ variant: "caption", ...v }} {...rest}>
       {children}
     </Typography>
   );

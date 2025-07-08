@@ -78,6 +78,7 @@ export const vars = createThemeContract({
   size: {
     1: "",
     16: "",
+    30: "",
     48: "",
     160: "",
     240: "",
@@ -197,6 +198,7 @@ const commonVars = {
   size: {
     1: ".1rem",
     16: "1.6rem",
+    30: "3.0rem",
     48: "4.8rem",
     160: "16.0rem",
     240: "24.0rem",

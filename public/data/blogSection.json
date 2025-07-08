@@ -1,0 +1,32 @@
+{
+  "heading": "Lab Solutions to Real World Impacts",
+  "blogs": [
+    {
+      "href": "#",
+      "image": {
+        "src": "/images/autex.webp",
+        "alt": "AutEx"
+      },
+      "title": "AutEx™ 96 Nucleic Acid Extractor",
+      "date": "2025-07-08T12:34:56.000Z"
+    },
+    {
+      "href": "#",
+      "image": {
+        "src": "/images/avam.webp",
+        "alt": "Avam"
+      },
+      "title": "Avam® NAsafe™ Nucleic Acid Molecular Transport Medium",
+      "date": "1999-01-15T00:00:00.000Z"
+    },
+    {
+      "href": "#",
+      "image": {
+        "src": "/images/dna.webp",
+        "alt": "DNA"
+      },
+      "title": "DNA VersaKit",
+      "date": "2033-11-05T08:45:30.000Z"
+    }
+  ]
+}

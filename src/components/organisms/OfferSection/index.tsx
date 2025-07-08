@@ -14,9 +14,9 @@ export const OfferSection = () => {
     <Container.Root as="section" s={{ py: [60, 80] }}>
       <Flex.Root s={{ flexd: "column", gap: [20] }}>
         <H2>{data?.heading}</H2>
-        <Grid.Root s={{ cols: [1, 4] }}>
+        <Grid.Root as="ul" s={{ cols: [1, 4] }}>
           {data?.offers.map((offer, index) => (
-            <Grid.Item key={index}>
+            <Grid.Item as="li" key={index}>
               <OfferCard offerData={offer} />
             </Grid.Item>
           ))}
