@@ -5,7 +5,7 @@ import {
   ContainerRootProps,
 } from "./container.types";
 
-const Outer = ({ children, s, ...rest }: ContainerOuterProps) => {
+const ContainerOuter = ({ children, s, ...rest }: ContainerOuterProps) => {
   return (
     <Box s={{ px: [16], ...s }} {...rest}>
       {children}
@@ -13,7 +13,7 @@ const Outer = ({ children, s, ...rest }: ContainerOuterProps) => {
   );
 };
 
-const Inner = ({ children, s, ...rest }: ContainerInnerProps) => {
+const ContainerInner = ({ children, s, ...rest }: ContainerInnerProps) => {
   return (
     <Box s={{ maxw: [1200], ml: "auto", mr: "auto", ...s }} {...rest}>
       {children}
@@ -21,14 +21,19 @@ const Inner = ({ children, s, ...rest }: ContainerInnerProps) => {
   );
 };
 
-const Root = ({ children, outerS, innerS, ...rest }: ContainerRootProps) => (
-  <Outer s={outerS} {...rest}>
-    <Inner s={innerS}>{children}</Inner>
-  </Outer>
+const ContainerRoot = ({
+  children,
+  outerS,
+  innerS,
+  ...rest
+}: ContainerRootProps) => (
+  <ContainerOuter s={outerS} {...rest}>
+    <ContainerInner s={innerS}>{children}</ContainerInner>
+  </ContainerOuter>
 );
 
 export const Container = {
-  Root,
-  Outer,
-  Inner,
+  Root: ContainerRoot,
+  Outer: ContainerOuter,
+  Inner: ContainerInner,
 };

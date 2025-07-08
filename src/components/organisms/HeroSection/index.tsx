@@ -31,7 +31,7 @@ export const HeroSection = () => {
       />
       <Lead.Root s={{ maxw: ["full", "half"], gap: 20 }}>
         <Lead.Heading v={{ tone: "light" }}>{data?.heading}</Lead.Heading>
-        <Lead.Paragraph v={{ tone: "light" }}>{data?.paragraph}</Lead.Paragraph>
+        <Lead.Body v={{ tone: "light" }}>{data?.body}</Lead.Body>
         <Lead.CTA>
           <Link tertiary href={data?.cta.href ?? "#"}>
             {data?.cta.label}

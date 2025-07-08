@@ -1,0 +1,25 @@
+{
+  "heading": "Our Offerings",
+  "offers": [
+    {
+      "href": "#",
+      "title": "Molecular Biology",
+      "body": "Advance your research with Avam's innovative molecular solutions, from PCR and sequencing to nucleic acid extraction platforms."
+    },
+    {
+      "href": "#",
+      "title": "Microbiology",
+      "body": "Elevate your microbiology workflow with InMicro's comprehensive range of media, identification systems, and quality control solutions."
+    },
+    {
+      "href": "#",
+      "title": "Cell Culture",
+      "body": "Consistent results with Ecose’s advanced media, supplements, and culture solutions, designed for reliability and performance."
+    },
+    {
+      "href": "#",
+      "title": "Collection & Transport",
+      "body": "Ensure sample integrity with Avam's versatile transport solutions, maintaining specimen viability from collection to analysis."
+    }
+  ]
+}

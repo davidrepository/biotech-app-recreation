@@ -133,6 +133,13 @@ export const vars = createThemeContract({
   zIndex: {
     "-1": "",
   },
+  gridTemplateColumns: {
+    1: "",
+    2: "",
+    4: "",
+    6: "",
+    12: "",
+  },
 });
 
 const commonVars = {
@@ -211,6 +218,13 @@ const commonVars = {
   },
   zIndex: {
     "-1": "-1",
+  },
+  gridTemplateColumns: {
+    1: "repeat(1, 1fr)",
+    2: "repeat(2, 1fr)",
+    4: "repeat(4, 1fr)",
+    6: "repeat(6, 1fr)",
+    12: "repeat(12, 1fr)",
   },
 };
 

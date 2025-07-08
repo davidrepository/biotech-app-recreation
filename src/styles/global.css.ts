@@ -29,6 +29,7 @@ globalStyle("button", {
 });
 
 globalStyle("a", {
+  color: "inherit",
   textDecoration: "none",
 });
 

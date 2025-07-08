@@ -12,12 +12,12 @@ export const typography = recipe({
       h2: s({
         fontSize: 24,
         lineHeight: 24,
-        fontWeight: 600,
+        fontWeight: 400,
       }),
       h3: s({
         fontSize: 22,
         lineHeight: 22,
-        fontWeight: 600,
+        fontWeight: 400,
       }),
       p: s({
         fontSize: 16,

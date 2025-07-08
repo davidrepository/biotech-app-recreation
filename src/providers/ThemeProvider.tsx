@@ -13,6 +13,7 @@ export const ThemeProvider = ({ children, ...rest }: ThemeProviderProps) => {
     <Box
       as="main"
       className={combineClassnames(roboto.className, lightThemeClass)}
+      s={{ color: "gray3" }}
       {...rest}
     >
       {children}

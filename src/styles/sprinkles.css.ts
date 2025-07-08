@@ -43,6 +43,8 @@ const responsiveProperties = defineProperties({
     alignItems: ["center"],
 
     flexDirection: ["row", "column"],
+
+    gridTemplateColumns: vars.gridTemplateColumns,
   },
   shorthands: {
     p: ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"],
@@ -70,16 +72,16 @@ const responsiveProperties = defineProperties({
     maxh: ["maxHeight"],
 
     jc: ["justifyContent"],
-
     ai: ["alignItems"],
-
     flexd: ["flexDirection"],
+
+    cols: ["gridTemplateColumns"],
   },
 });
 
 const unresposiveProperties = defineProperties({
   properties: {
-    display: ["flex", "block"],
+    display: ["block", "flex", "grid"],
     position: ["sticky", "relative", "absolute"],
     cursor: ["pointer"],
     objectFit: ["cover"],
