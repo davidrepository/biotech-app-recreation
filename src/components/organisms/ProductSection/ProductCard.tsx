@@ -1,5 +1,5 @@
 import { Link, Card, Lead, P, H3 } from "@/components";
-import { ProductProps } from "./productsSection.types";
+import { ProductProps } from "./productSection.types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,4 +1,4 @@
-import { HeroSection, OfferSection, ProductsSection } from "@/components";
+import { HeroSection, OfferSection, ProductSection } from "@/components";
 import { Separator } from "@/components/primitives/Separator";
 
 import "@/styles/global.css";
@@ -9,7 +9,7 @@ export default function Home() {
       <HeroSection />
       <OfferSection />
       <Separator withContainer />
-      <ProductsSection />
+      <ProductSection />
     </>
   );
 }

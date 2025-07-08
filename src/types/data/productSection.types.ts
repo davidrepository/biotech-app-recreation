@@ -1,9 +1,9 @@
 import { LinkProps } from "next/link";
 import { ImageProps } from "../ui";
 
-export interface ProductImage extends ImageProps {}
+interface ProductImage extends ImageProps {}
 
-export interface CTAProps extends LinkProps {
+interface CTAProps extends LinkProps {
   variant: string;
   body: string;
 }
@@ -21,7 +21,7 @@ export interface Product {
   cta: CTAProps[];
 }
 
-export interface ProductsSectionData {
+export interface ProductSectionData {
   heading: string;
   products: Product[];
 }

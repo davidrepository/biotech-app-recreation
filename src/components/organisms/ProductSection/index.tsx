@@ -1,13 +1,13 @@
 "use client";
 
 import { Container, Flex, Grid, H2 } from "@/components";
-import { useProductsSectionData } from "@/hooks";
+import { useProductSectionData } from "@/hooks";
 import { ProductCard } from "./ProductCard";
 import { Separator } from "@/components/primitives/Separator";
 import { Fragment } from "react";
 
-export const ProductsSection = () => {
-  const { data, loading, error } = useProductsSectionData();
+export const ProductSection = () => {
+  const { data, loading, error } = useProductSectionData();
 
   if (loading) return <div>Loading hero section...</div>;
   if (error) return <div>Error loading hero section</div>;

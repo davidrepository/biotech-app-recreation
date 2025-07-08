@@ -2,4 +2,4 @@ export { useTopBarData } from "./useTopBarData";
 export { useHeaderData } from "./useHeaderData";
 export { useHeroSectionData } from "./useHeroSectionData";
 export { useOfferSectionData } from "./useOfferSectionData";
-export { useProductsSectionData } from "./useProductsSectionData";
+export { useProductSectionData } from "./useProductSectionData";

@@ -1,9 +1,9 @@
 import { LinkProps } from "next/link";
 import { ImageProps } from "../ui";
 
-export interface HeroImage extends ImageProps {}
+interface HeroImage extends ImageProps {}
 
-export interface CTAProps extends LinkProps {
+interface CTAProps extends LinkProps {
   variant: string;
   label: string;
 }
