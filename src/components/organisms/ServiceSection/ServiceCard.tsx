@@ -1,17 +1,17 @@
 import { Link, Card, Lead, H3, P } from "@/components";
-import { OfferProps } from "./offerSection.types";
+import { ServiceProps } from "./serviceSection.types";
 
-export const OfferCard = ({ offerData }: OfferProps) => {
+export const ServiceCard = ({ serviceData }: ServiceProps) => {
   return (
-    <Link href={offerData?.href ?? "#"} s={{ color: { hover: "primary" } }}>
+    <Link href={serviceData?.href ?? "#"} s={{ color: { hover: "primary" } }}>
       <Card.Root s={{ p: [20] }}>
         <Card.Body>
           <Lead.Root s={{ gap: 16 }}>
             <Lead.Head>
-              <H3>{offerData?.title}</H3>
+              <H3>{serviceData?.title}</H3>
             </Lead.Head>
             <Lead.Body>
-              <P s={{ color: "gray10" }}>{offerData?.body}</P>
+              <P s={{ color: "gray10" }}>{serviceData?.body}</P>
             </Lead.Body>
           </Lead.Root>
         </Card.Body>

@@ -1,0 +1,20 @@
+{
+  "heading": "Featured Services",
+  "services": [
+    {
+      "href": "#",
+      "title": "OEM & Custom",
+      "body": "Looking for tailored solutions? Avam’s OEM & custom services deliver fast, next-day* customizations designed to meet your unique specifications."
+    },
+    {
+      "href": "#",
+      "title": "New Research & Lab",
+      "body": "Starting a new lab or have a new grant? Avam’s New Lab program offers exclusive discounts, expert guidance, and full support to help you get up and running quickly."
+    },
+    {
+      "href": "#",
+      "title": "Instrument Trade Up",
+      "body": "Upgrade your lab with Avam’s Instrument Trade Up program. Get credit towards new, advanced systems when you trade in your older equipment."
+    }
+  ]
+}
