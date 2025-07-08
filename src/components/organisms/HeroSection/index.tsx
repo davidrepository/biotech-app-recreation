@@ -1,6 +1,6 @@
 "use client";
 
-import { Image, Lead, Container, Link } from "@/components";
+import { Image, Lead, Container, Link, H1, P } from "@/components";
 import { useHeroSectionData } from "@/hooks";
 
 export const HeroSection = () => {
@@ -30,12 +30,22 @@ export const HeroSection = () => {
         s={{ objectFit: "cover", zIndex: "-1" }}
       />
       <Lead.Root s={{ maxw: ["full", "half"], gap: 20 }}>
-        <Lead.Heading v={{ tone: "light" }}>{data?.heading}</Lead.Heading>
-        <Lead.Body v={{ tone: "light" }}>{data?.body}</Lead.Body>
+        <Lead.Head>
+          <H1 v={{ tone: "light" }}>{data?.heading}</H1>
+        </Lead.Head>
+        <Lead.Body>
+          <P v={{ tone: "light" }}>{data?.body}</P>
+        </Lead.Body>
         <Lead.CTA>
-          <Link tertiary href={data?.cta.href ?? "#"}>
-            {data?.cta.label}
-          </Link>
+          {data?.cta.map((item, index) => (
+            <Link
+              key={index}
+              href={item.href ?? "#"}
+              v={{ variant: item.variant }}
+            >
+              {item.label}
+            </Link>
+          ))}
         </Lead.CTA>
       </Lead.Root>
     </Container.Root>

@@ -1,12 +1,12 @@
-import { Box, Flex, H1, H2, H3, P } from "@/components";
+import { Box, Flex } from "@/components";
 import {
+  LeadRootProps,
+  LeadHeadProps,
+  LeadBodyProps,
   LeadCTAProps,
-  LeadHeadingProps,
-  LeadProps,
-  LeadSubHeadingProps,
 } from "./lead.types";
 
-const LeadRoot = ({ children, s, ...rest }: LeadProps) => {
+const LeadRoot = ({ children, s, ...rest }: LeadRootProps) => {
   return (
     <Flex.Root as="section" s={{ flexDirection: "column", ...s }} {...rest}>
       {children}
@@ -14,28 +14,21 @@ const LeadRoot = ({ children, s, ...rest }: LeadProps) => {
   );
 };
 
-const LeadSubHeading = ({ children, ...rest }: LeadSubHeadingProps) => {
-  return <P {...rest}>{children}</P>;
+const LeadHead = ({ children, ...rest }: LeadHeadProps) => {
+  return <Flex.Root {...rest}>{children}</Flex.Root>;
 };
 
-const LeadHeading = ({ children, h1, h2, h3, ...rest }: LeadHeadingProps) => {
-  if (h2) return <H2 {...rest}>{children}</H2>;
-  if (h3) return <H3 {...rest}>{children}</H3>;
-  return <H1 {...rest}>{children}</H1>;
+const LeadBody = ({ children, ...rest }: LeadBodyProps) => {
+  return <Box {...rest}>{children}</Box>;
 };
 
-const LeadBody = ({ children, ...rest }: LeadHeadingProps) => {
-  return <P {...rest}>{children}</P>;
-};
-
-const CTA = ({ children }: LeadCTAProps) => {
-  return <Box>{children}</Box>;
+const CTA = ({ children, ...rest }: LeadCTAProps) => {
+  return <Flex.Root {...rest}>{children}</Flex.Root>;
 };
 
 export const Lead = {
   Root: LeadRoot,
-  SubHeading: LeadSubHeading,
-  Heading: LeadHeading,
+  Head: LeadHead,
   Body: LeadBody,
   CTA,
 };

@@ -7,6 +7,8 @@ const responsiveProperties = defineProperties({
   defaultCondition: "mobile",
   responsiveArray: ["mobile", "tablet", "desktop", "tv"],
   properties: {
+    position: ["sticky", "relative", "absolute", "unset"],
+
     gap: vars.space,
 
     paddingTop: vars.space,
@@ -40,11 +42,15 @@ const responsiveProperties = defineProperties({
 
     justifyContent: ["space-between", "center"],
 
-    alignItems: ["center"],
+    alignItems: ["center", "flex-start"],
 
-    flexDirection: ["row", "column"],
+    flexDirection: ["row", "column", "row-reverse", "column-reverse"],
 
     gridTemplateColumns: vars.gridTemplateColumns,
+    gridColumn: vars.gridSpan,
+
+    aspectRatio: ["1/1"],
+    flexShrink: [0],
   },
   shorthands: {
     p: ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"],
@@ -76,17 +82,17 @@ const responsiveProperties = defineProperties({
     flexd: ["flexDirection"],
 
     cols: ["gridTemplateColumns"],
+    spanx: ["gridColumn"],
   },
 });
 
 const unresposiveProperties = defineProperties({
   properties: {
     display: ["block", "flex", "grid"],
-    position: ["sticky", "relative", "absolute"],
     cursor: ["pointer"],
     objectFit: ["cover"],
-
-    zIndex: vars.zIndex,
+    zIndex: ["-1", 2],
+    transition: vars.transition,
   },
 });
 

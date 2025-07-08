@@ -1,10 +1,8 @@
+import { ImageProps } from "next/image";
 import { BoxProps } from "@/types";
 
-export interface CardProps extends BoxProps {
-  children: React.ReactNode;
-}
+export interface CardProps extends BoxProps {}
 
-export interface CardImageProps extends BoxProps {
-  src: string;
-  alt?: string;
+export interface CardImageProps extends ImageProps, BoxProps {
+  link?: boolean;
 }

@@ -26,11 +26,12 @@ export const LeftSection = ({ data }: LeftSectionProps) => {
                 <Navigation.Item key={idx}>
                   <Link
                     href={item.href ?? "#"}
-                    darkGhost
+                    s={{
+                      px: 16,
+                    }}
                     v={{
+                      variant: "darkGhost",
                       weight: "bold",
-                      spacingY: "md",
-                      spacingX: "md",
                     }}
                   >
                     {item.label}

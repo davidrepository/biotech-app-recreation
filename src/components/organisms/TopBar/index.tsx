@@ -20,11 +20,7 @@ export const TopBar = () => {
       }}
     >
       <Flex.Root s={{ jc: "space-between" }}>
-        <Link
-          href={data.promo.cta.href}
-          lightGhost
-          v={{ size: "sm", spacingY: "sm" }}
-        >
+        <Link href={data.promo.cta.href} v={{ variant: "lightGhost" }}>
           {data.promo.text} - {data.promo.cta.label}
         </Link>
         <Flex.Root s={{ gap: 24 }}>
@@ -32,10 +28,8 @@ export const TopBar = () => {
             <Link
               key={index}
               href={href}
-              lightGhost
               v={{
-                size: "sm",
-                spacingY: "sm",
+                variant: "lightGhost",
                 weight: "bold",
                 ...(index === 0 ? { withAfterSeparator: true } : {}),
               }}

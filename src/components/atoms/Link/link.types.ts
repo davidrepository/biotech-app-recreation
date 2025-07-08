@@ -1,7 +1,4 @@
-import { ReactNode } from "react";
 import { LinkProps as NextLinkProps } from "next/link";
+import { BoxProps } from "@/types";
 
-export interface LinkProps extends NextLinkProps {
-  children: ReactNode;
-  [key: string]: any;
-}
+export interface LinkProps extends NextLinkProps, BoxProps {}

@@ -12,7 +12,7 @@ export const RightSection = () => {
 
   return (
     <Flex.Root>
-      <Button darkGhost v={{ square: "md" }}>
+      <Button v={{ variant: "darkGhost", square: "md" }}>
         <FontAwesomeIcon icon={faMagnifyingGlass} />
       </Button>
 
@@ -20,17 +20,15 @@ export const RightSection = () => {
         <>
           <Link
             href="#"
-            darkGhost
             v={{
-              spacingY: "md",
-              spacingX: "md",
+              variant: "darkGhost",
               weight: "bold",
             }}
           >
             Login
           </Link>
 
-          <Link href="#" darkGhost v={{ square: "md" }}>
+          <Link href="#" v={{ variant: "darkGhost", square: "md" }}>
             <FontAwesomeIcon icon={faHeart} />
           </Link>
         </>
@@ -39,7 +37,7 @@ export const RightSection = () => {
       <CartButtonWithBadge count={0} />
 
       {!isLaptop && (
-        <Button darkGhost v={{ square: "md" }}>
+        <Button v={{ variant: "darkGhost", square: "md" }}>
           <FontAwesomeIcon icon={faBars} />
         </Button>
       )}

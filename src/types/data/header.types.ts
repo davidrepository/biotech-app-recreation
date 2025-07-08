@@ -1,11 +1,10 @@
-export interface Logo {
-  src: string;
-  alt: string;
-}
+import { LinkProps } from "next/link";
+import { ImageProps } from "../ui";
 
-export interface NavigationItem {
+export interface Logo extends ImageProps {}
+
+export interface NavigationItem extends LinkProps {
   label: string;
-  href: string;
 }
 
 export interface HeaderData {

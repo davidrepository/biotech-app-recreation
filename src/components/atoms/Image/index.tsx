@@ -1,7 +1,7 @@
 import NextImage from "next/image";
-import { NextImageProps } from "./image.types";
+import { ImageProps } from "./image.types";
 import { Box } from "@/components";
 
-export const Image = ({ ...rest }: NextImageProps) => {
+export const Image = ({ ...rest }: ImageProps) => {
   return <Box as={NextImage} {...rest} />;
 };

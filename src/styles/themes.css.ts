@@ -15,6 +15,7 @@ const palette = {
   white: "#FFFFFF",
   black: "#000000",
 
+  // Gray scale gained from Radix UI: https://www.radix-ui.com/colors
   gray1: "#111111",
   gray2: "#191919",
   gray3: "#222222",
@@ -76,13 +77,19 @@ export const vars = createThemeContract({
   },
   size: {
     1: "",
-    14: "", // TopBar separator
+    16: "",
     48: "",
+    160: "",
+    240: "",
     420: "",
     1200: "",
 
+    "30%": "",
+    "40%": "",
+
     half: "",
     full: "",
+    unset: "",
   },
   fontSize: {
     14: "", // small link, small body
@@ -130,15 +137,20 @@ export const vars = createThemeContract({
   transform: {
     "-halfY": "",
   },
-  zIndex: {
-    "-1": "",
-  },
   gridTemplateColumns: {
     1: "",
     2: "",
+    3: "",
     4: "",
     6: "",
     12: "",
+  },
+  gridSpan: {
+    "2..": "",
+    unset: "",
+  },
+  transition: {
+    "200msColorBgc": "",
   },
 });
 
@@ -184,13 +196,19 @@ const commonVars = {
   },
   size: {
     1: ".1rem",
-    14: "1.4rem", // TopBar separator
+    16: "1.6rem",
     48: "4.8rem",
+    160: "16.0rem",
+    240: "24.0rem",
     420: "42.0rem",
     1200: "120rem",
 
+    "30%": "30%",
+    "40%": "40%",
+
     half: "50%",
     full: "100%",
+    unset: "unset",
   },
   fontSize: {
     28: "2.8rem", // h1
@@ -216,15 +234,20 @@ const commonVars = {
   transform: {
     "-halfY": "translateY(-50%)",
   },
-  zIndex: {
-    "-1": "-1",
-  },
   gridTemplateColumns: {
     1: "repeat(1, 1fr)",
     2: "repeat(2, 1fr)",
+    3: "repeat(3, 1fr)",
     4: "repeat(4, 1fr)",
     6: "repeat(6, 1fr)",
     12: "repeat(12, 1fr)",
+  },
+  gridSpan: {
+    "2..": "2 / -1",
+    unset: "unset",
+  },
+  transition: {
+    "200msColorBgc": ".2s color, .2s background",
   },
 };
 

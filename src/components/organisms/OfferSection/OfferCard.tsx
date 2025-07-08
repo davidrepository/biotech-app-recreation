@@ -1,4 +1,4 @@
-import { Link, Card, Lead } from "@/components";
+import { Link, Card, Lead, H3, P } from "@/components";
 import { OfferProps } from "./offerSection.types";
 
 export const OfferCard = ({ offerData }: OfferProps) => {
@@ -7,8 +7,12 @@ export const OfferCard = ({ offerData }: OfferProps) => {
       <Card.Root s={{ p: [20] }}>
         <Card.Body>
           <Lead.Root s={{ gap: 16 }}>
-            <Lead.Heading h3>{offerData?.title}</Lead.Heading>
-            <Lead.Body s={{ color: "gray10" }}>{offerData?.body}</Lead.Body>
+            <Lead.Head>
+              <H3>{offerData?.title}</H3>
+            </Lead.Head>
+            <Lead.Body>
+              <P s={{ color: "gray10" }}>{offerData?.body}</P>
+            </Lead.Body>
           </Lead.Root>
         </Card.Body>
       </Card.Root>

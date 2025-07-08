@@ -7,10 +7,3 @@ export interface ButtonProps extends BoxProps {
   lightGhost?: boolean;
   darkGhost?: boolean;
 }
-
-export type Tone =
-  | "primary"
-  | "secondary"
-  | "tertiary"
-  | "lightGhost"
-  | "darkGhost";

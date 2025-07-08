@@ -1,10 +1,4 @@
+import { ImageProps as NextImageProps } from "next/image";
 import { BoxProps } from "@/types";
 
-export interface NextImageProps extends BoxProps {
-  src: string;
-  alt: string;
-  width?: number;
-  height?: number;
-  priority?: boolean;
-  fill?: boolean;
-}
+export interface ImageProps extends NextImageProps, BoxProps {}

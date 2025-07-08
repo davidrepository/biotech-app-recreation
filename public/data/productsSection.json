@@ -1,0 +1,78 @@
+{
+  "heading": "Featured Products",
+  "products": [
+    {
+      "href": "#",
+      "image": {
+        "src": "/images/autex.webp",
+        "alt": "AutEx"
+      },
+      "title": "AutEx™ 96 Nucleic Acid Extractor",
+      "body": "The Avam® AutEx™ 96 is a revolutionary tool for molecular biology, offering unmatched precision, speed, and reliability in PCR applications. Its advanced features, including rapid thermal cycling, sophisticated program management, and exceptional temperature control, make it a cornerstone for any lab committed to achieving consistent and reproducible results.",
+      "cta": [
+        {
+          "href": "#",
+          "variant": "primary",
+          "body": "Select option"
+        },
+        {
+          "href": "#",
+          "variant": "secondary",
+          "body": "Show more"
+        }
+      ]
+    },
+    {
+      "href": "#",
+      "image": {
+        "src": "/images/avam.webp",
+        "alt": "Avam"
+      },
+      "title": "Avam® NAsafe™ Nucleic Acid Molecular Transport Medium",
+      "body": "Avam® NAsafe™ is an advanced nucleic acid transport medium designed to collect, inactivate, and preserve microbial and human nucleic acids with unparalleled efficiency. Ideal for molecular diagnostics, genetics research, and sequencing applications, NAsafe™ ensures sample integrity from collection to analysis.",
+      "price": {
+        "currency": "$",
+        "from": "201",
+        "to": "245"
+      },
+      "cta": [
+        {
+          "href": "#",
+          "variant": "primary",
+          "body": "Select option"
+        },
+        {
+          "href": "#",
+          "variant": "secondary",
+          "body": "Show more"
+        }
+      ]
+    },
+    {
+      "href": "#",
+      "image": {
+        "src": "/images/dna.webp",
+        "alt": "DNA"
+      },
+      "title": "DNA VersaKit",
+      "body": "Facilitate streamlined DNA purification with the DNA VersaKit™, compatible with Avam® AutEx™ platform for automated processing of up to 96 samples, offering rapid and reliable extraction of high-quality DNA from various sample types.",
+      "price": {
+        "currency": "$",
+        "from": "117",
+        "to": "1136"
+      },
+      "cta": [
+        {
+          "href": "#",
+          "variant": "primary",
+          "body": "Select option"
+        },
+        {
+          "href": "#",
+          "variant": "secondary",
+          "body": "Show more"
+        }
+      ]
+    }
+  ]
+}

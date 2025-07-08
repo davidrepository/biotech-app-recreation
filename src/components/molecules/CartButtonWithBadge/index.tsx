@@ -5,7 +5,7 @@ import { CartButtonWithBadgeProps } from "./cartButtonWithBadge.types";
 
 export const CartButtonWithBadge = ({ count }: CartButtonWithBadgeProps) => {
   return (
-    <Button darkGhost v={{ square: "md" }}>
+    <Button v={{ variant: "darkGhost", square: "md" }}>
       <FontAwesomeIcon icon={faCartShopping} />
       <Box
         s={{

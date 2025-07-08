@@ -1,13 +1,31 @@
 import React from "react";
 import { CardImageProps, CardProps } from "./card.types";
-import { Box, Image } from "@/components";
+import { Box, Flex, Image, Link } from "@/components";
 
 const CardRoot = ({ children, ...rest }: CardProps) => {
-  return <Box {...rest}>{children}</Box>;
+  return <Flex.Root {...rest}>{children}</Flex.Root>;
 };
 
-const CardImage = ({ src, alt, ...rest }: CardImageProps) => {
-  return <Image src={src ?? ""} alt={alt ?? ""} {...rest} />;
+const CardImage = ({ src, alt, link, href = "#", ...rest }: CardImageProps) => {
+  return (
+    <Box
+      s={{
+        w: ["full", "40%", "30%"],
+        maxw: ["unset", 420],
+        position: "relative",
+        aspectRatio: "1/1",
+        flexShrink: 0,
+      }}
+    >
+      {link ? (
+        <Link href={href} s={{ display: "block", w: "full", h: "full" }}>
+          <Image src={src ?? ""} alt={alt ?? ""} fill {...rest} />
+        </Link>
+      ) : (
+        <Image src={src ?? ""} alt={alt ?? ""} fill {...rest} />
+      )}
+    </Box>
+  );
 };
 
 const CardBody = ({ children, ...rest }: CardProps) => {

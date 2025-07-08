@@ -1,14 +1,16 @@
-export interface TopBarPromo {
-  text: string;
-  cta: {
-    label: string;
-    href: string;
-  };
+import { LinkProps } from "next/link";
+
+export interface CTAProps extends LinkProps {
+  label: string;
 }
 
-export interface TopBarLink {
+export interface TopBarPromo {
+  text: string;
+  cta: CTAProps;
+}
+
+export interface TopBarLink extends LinkProps {
   label: string;
-  href: string;
 }
 
 export interface TopBarData {

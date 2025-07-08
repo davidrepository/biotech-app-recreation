@@ -2,68 +2,35 @@
 
 import { Box } from "@/components";
 import { BUTTON_TONE } from "./button.constants";
-import { ButtonProps, Tone } from "./button.types";
+import { ButtonProps } from "./button.types";
 import { button } from "./button.css";
 
-export const Button = ({
-  children,
-  as,
-  primary,
-  secondary,
-  tertiary,
-  lightGhost,
-  darkGhost,
-  v,
-  ...rest
-}: ButtonProps) => {
-  const tone: Tone = primary
-    ? BUTTON_TONE.PRIMARY
-    : secondary
-    ? BUTTON_TONE.SECONDARY
-    : tertiary
-    ? BUTTON_TONE.TERTIARY
-    : lightGhost
-    ? BUTTON_TONE.LIGHT_GHOST
-    : darkGhost
-    ? BUTTON_TONE.DARK_GHOST
-    : v?.tone;
-
-  const toneOverrides =
-    tone === BUTTON_TONE.PRIMARY
-      ? { spacingY: "md", spacingX: "md", size: "sm" }
-      : tone === BUTTON_TONE.SECONDARY
-      ? { spacingY: "sm", size: "sm" }
-      : tone === BUTTON_TONE.TERTIARY
-      ? { spacingY: "sm", size: "md" }
-      : {};
-
-  const vWithTone = { ...v, tone, ...toneOverrides };
-
+export const Button = ({ children, as, v, ...rest }: ButtonProps) => {
   return (
-    <Box as={as ?? "button"} recipe={button} v={vWithTone} {...rest}>
+    <Box as={as ?? "button"} recipe={button} v={v} {...rest}>
       {children}
 
       {v?.withAfterSeparator && (
         <Box
           s={{
-            h: 14,
+            h: 16,
             w: 1,
             position: "absolute",
             top: "half",
             transform: "-halfY",
             right: "-24",
-            bgc: lightGhost ? "gray11" : "black",
+            bgc: v?.variant === BUTTON_TONE.LIGHT_GHOST ? "gray11" : "black",
           }}
         />
       )}
 
-      {(secondary || tertiary) && (
+      {[BUTTON_TONE.SECONDARY, BUTTON_TONE.TERTIARY].includes(v?.variant) && (
         <Box
           s={{
             position: "absolute",
             h: 1,
             bottom: 0,
-            bgc: secondary ? "gray11" : "white",
+            bgc: v?.variant === BUTTON_TONE.SECONDARY ? "gray11" : "white",
             w: "full",
           }}
         />

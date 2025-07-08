@@ -5,21 +5,65 @@ export const button = recipe({
   base: s({
     position: "relative",
     cursor: "pointer",
+    transition: "200msColorBgc",
   }),
   variants: {
-    size: {
-      sm: s({ fontSize: 14, lineHeight: 14 }),
-      md: s({ fontSize: 16, lineHeight: 16 }),
-    },
-    spacingY: {
-      none: s({ py: 0 }),
-      sm: s({ py: 12 }),
-      md: s({ py: 16 }),
-    },
-    spacingX: {
-      none: s({ px: 0 }),
-      sm: s({ px: 12 }),
-      md: s({ px: 16 }),
+    variant: {
+      primary: s({
+        fontSize: 14,
+        lineHeight: 14,
+        py: 12,
+        px: 20,
+        color: {
+          light: "white",
+          dark: "white",
+        },
+        bgc: {
+          light: "gray1",
+          dark: "gray1",
+          hover: "gray7",
+        },
+      }),
+      secondary: s({
+        fontSize: 14,
+        lineHeight: 14,
+        py: 4,
+        color: {
+          light: "black",
+          dark: "black",
+          hover: "primary",
+        },
+      }),
+      tertiary: s({
+        fontSize: 16,
+        lineHeight: 16,
+        py: 8,
+        color: {
+          light: "primary",
+          dark: "primary",
+          hover: "gray10",
+        },
+      }),
+      lightGhost: s({
+        fontSize: 14,
+        lineHeight: 14,
+        py: 16,
+        color: {
+          light: "gray11",
+          dark: "gray11",
+          hover: "gray10",
+        },
+      }),
+      darkGhost: s({
+        fontSize: 16,
+        lineHeight: 16,
+        py: 16,
+        color: {
+          light: "gray10",
+          dark: "gray10",
+          hover: "gray1",
+        },
+      }),
     },
     square: {
       md: s({
@@ -28,45 +72,6 @@ export const button = recipe({
         display: "flex",
         jc: "center",
         ai: "center",
-      }),
-    },
-    tone: {
-      primary: s({
-        bgc: {
-          light: "gray1",
-          dark: "gray1",
-        },
-        color: {
-          light: "white",
-          dark: "white",
-        },
-      }),
-      secondary: s({
-        color: {
-          light: "black",
-          dark: "black",
-        },
-      }),
-      tertiary: s({
-        color: {
-          light: "primary",
-          dark: "primary",
-          hover: "gray10",
-        },
-      }),
-      lightGhost: s({
-        color: {
-          light: "gray11",
-          dark: "gray11",
-          hover: "gray10",
-        },
-      }),
-      darkGhost: s({
-        color: {
-          light: "gray10",
-          dark: "gray10",
-          hover: "gray1",
-        },
       }),
     },
     weight: {

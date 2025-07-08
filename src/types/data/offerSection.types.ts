@@ -1,5 +1,6 @@
-export interface Offer {
-  href: string;
+import { LinkProps } from "next/link";
+
+export interface Offer extends LinkProps {
   title: string;
   body: string;
 }
