@@ -1,13 +1,5 @@
-import { ReactNode } from "react";
+import { BoxProps } from "@/types";
 
-export type FlexItemProps = {
-  as?: string;
-  s?: Record<string, any>;
-  children: ReactNode;
-};
+export interface FlexItemProps extends BoxProps {}
 
-export type FlexRootProps = {
-  as?: string;
-  s?: Record<string, any>;
-  children: ReactNode;
-};
+export interface FlexRootProps extends BoxProps {}

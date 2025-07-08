@@ -1,18 +1,10 @@
-import { ReactNode } from "react";
+import { BoxProps } from "@/types";
 
-export type ContainerOuterProps = {
-  s?: Record<string, any>;
-  children: ReactNode;
-};
+export interface ContainerOuterProps extends BoxProps {}
 
-export type ContainerInnerProps = {
-  s?: Record<string, any>;
-  children: ReactNode;
-};
+export interface ContainerInnerProps extends BoxProps {}
 
-export type ContainerRootProps = {
-  as?: string;
+export interface ContainerRootProps extends BoxProps {
   outerS?: Record<string, any>;
   innerS?: Record<string, any>;
-  children: ReactNode;
-};
+}

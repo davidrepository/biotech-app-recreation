@@ -1,6 +1,16 @@
-import { ReactNode } from "react";
+import { BoxProps } from "@/types";
 
-export type ButtonProps = {
-  recipe?: (v: any) => string | undefined;
-  children: ReactNode;
-};
+export interface ButtonProps extends BoxProps {
+  primary?: boolean;
+  secondary?: boolean;
+  tertiary?: boolean;
+  lightGhost?: boolean;
+  darkGhost?: boolean;
+}
+
+export type Tone =
+  | "primary"
+  | "secondary"
+  | "tertiary"
+  | "lightGhost"
+  | "darkGhost";

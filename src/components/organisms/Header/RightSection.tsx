@@ -1,4 +1,4 @@
-import { Flex, IconButton, Link, CartButtonWithBadge } from "@/components";
+import { Flex, Link, CartButtonWithBadge, Button } from "@/components";
 import { useMediaQuery } from "@/hooks";
 import {
   faBars,
@@ -8,21 +8,29 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const RightSection = () => {
-  const { isTablet } = useMediaQuery();
+  const { isLaptop } = useMediaQuery();
 
   return (
     <Flex.Root>
-      <IconButton v={{ type: "link" }}>
+      <Button darkGhost v={{ square: "md" }}>
         <FontAwesomeIcon icon={faMagnifyingGlass} />
-      </IconButton>
+      </Button>
 
-      {isTablet && (
+      {isLaptop && (
         <>
-          <Link href="#" bold>
+          <Link
+            href="#"
+            darkGhost
+            v={{
+              spacingY: "md",
+              spacingX: "md",
+              weight: "bold",
+            }}
+          >
             Login
           </Link>
 
-          <Link href="#" square noSpacing>
+          <Link href="#" darkGhost v={{ square: "md" }}>
             <FontAwesomeIcon icon={faHeart} />
           </Link>
         </>
@@ -30,10 +38,10 @@ export const RightSection = () => {
 
       <CartButtonWithBadge count={0} />
 
-      {!isTablet && (
-        <IconButton v={{ type: "link" }}>
+      {!isLaptop && (
+        <Button darkGhost v={{ square: "md" }}>
           <FontAwesomeIcon icon={faBars} />
-        </IconButton>
+        </Button>
       )}
     </Flex.Root>
   );

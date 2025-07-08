@@ -29,7 +29,6 @@ globalStyle("button", {
 });
 
 globalStyle("a", {
-  display: "block",
   textDecoration: "none",
 });
 

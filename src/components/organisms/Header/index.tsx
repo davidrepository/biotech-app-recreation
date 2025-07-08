@@ -1,7 +1,7 @@
 "use client";
 
-import { useHeaderData } from "@/hooks";
 import { Flex, Container } from "@/components";
+import { useHeaderData } from "@/hooks";
 import { LeftSection } from "./LeftSection";
 import { RightSection } from "./RightSection";
 

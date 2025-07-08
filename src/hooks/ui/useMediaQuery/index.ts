@@ -8,7 +8,9 @@ export const useMediaQuery = (): MediaQueryMatches => {
   const [matches, setMatches] = useState<MediaQueryMatches>({
     isMobile: false,
     isTablet: false,
+    isLaptop: false,
     isDesktop: false,
+    isWide: false,
     isTV: false,
   });
 
@@ -18,7 +20,9 @@ export const useMediaQuery = (): MediaQueryMatches => {
     const queries: Record<keyof MediaQueryMatches, MediaQueryList> = {
       isMobile: window.matchMedia(`(min-width: ${breakpoints.mobile}px)`),
       isTablet: window.matchMedia(`(min-width: ${breakpoints.tablet}px)`),
+      isLaptop: window.matchMedia(`(min-width: ${breakpoints.laptop}px)`),
       isDesktop: window.matchMedia(`(min-width: ${breakpoints.desktop}px)`),
+      isWide: window.matchMedia(`(min-width: ${breakpoints.wide}px)`),
       isTV: window.matchMedia(`(min-width: ${breakpoints.tv}px)`),
     };
 
@@ -26,7 +30,9 @@ export const useMediaQuery = (): MediaQueryMatches => {
       setMatches({
         isMobile: queries.isMobile.matches,
         isTablet: queries.isTablet.matches,
+        isLaptop: queries.isLaptop.matches,
         isDesktop: queries.isDesktop.matches,
+        isWide: queries.isWide.matches,
         isTV: queries.isTV.matches,
       });
     };

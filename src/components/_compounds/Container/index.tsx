@@ -7,7 +7,7 @@ import {
 
 const Outer = ({ children, s, ...rest }: ContainerOuterProps) => {
   return (
-    <Box s={{ px: [16, 32], ...s }} {...rest}>
+    <Box s={{ px: [16], ...s }} {...rest}>
       {children}
     </Box>
   );

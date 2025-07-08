@@ -3,12 +3,12 @@ import { useMediaQuery } from "@/hooks";
 import { LeftSectionProps } from "./header.types";
 
 export const LeftSection = ({ data }: LeftSectionProps) => {
-  const { isTablet } = useMediaQuery();
+  const { isLaptop } = useMediaQuery();
 
   return (
     <Flex.Root s={{ ai: "center", gap: 32 }}>
       <Flex.Item>
-        <Link href="#" noSpacing>
+        <Link href="#">
           <Image
             src={data.company.logo.src}
             alt={data.company.logo.alt}
@@ -18,13 +18,21 @@ export const LeftSection = ({ data }: LeftSectionProps) => {
           />
         </Link>
       </Flex.Item>
-      {isTablet && (
+      {isLaptop && (
         <Flex.Item>
           <Navigation.Root>
             <Navigation.List vertical>
               {data.navigation.map((item, idx) => (
                 <Navigation.Item key={idx}>
-                  <Link key={item.href} bold href={"#"}>
+                  <Link
+                    href={item.href ?? "#"}
+                    darkGhost
+                    v={{
+                      weight: "bold",
+                      spacingY: "md",
+                      spacingX: "md",
+                    }}
+                  >
                     {item.label}
                   </Link>
                 </Navigation.Item>

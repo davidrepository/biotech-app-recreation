@@ -2,9 +2,11 @@ import { createThemeContract, createTheme } from "@vanilla-extract/css";
 
 export const breakpoints = {
   mobile: 0,
-  tablet: 1100,
-  desktop: 1500,
-  tv: 2100,
+  tablet: 768,
+  laptop: 1024,
+  desktop: 1280,
+  wide: 1536,
+  tv: 1920,
 };
 
 const palette = {
@@ -74,19 +76,29 @@ export const vars = createThemeContract({
   },
   size: {
     1: "",
-    14: "", // TopBar Separator
+    14: "", // TopBar separator
     48: "",
+    420: "",
     1200: "",
 
+    half: "",
     full: "",
   },
   fontSize: {
-    14: "",
-    16: "",
+    14: "", // small link, small body
+    16: "", // body
+    28: "", // h1
+    24: "", // h2
+    22: "", // h3
+    20: "", // h4
   },
   lineHeight: {
-    14: "",
+    28: "",
+    24: "",
+    22: "",
+    20: "",
     16: "",
+    14: "",
   },
   fontWeight: {
     400: "",
@@ -117,6 +129,9 @@ export const vars = createThemeContract({
   },
   transform: {
     "-halfY": "",
+  },
+  zIndex: {
+    "-1": "",
   },
 });
 
@@ -162,19 +177,29 @@ const commonVars = {
   },
   size: {
     1: ".1rem",
-    14: "1.4rem", // TopBar Separator
+    14: "1.4rem", // TopBar separator
     48: "4.8rem",
+    420: "42.0rem",
     1200: "120rem",
 
+    half: "50%",
     full: "100%",
   },
   fontSize: {
-    14: "1.4rem",
-    16: "1.6rem",
+    28: "2.8rem", // h1
+    24: "2.4rem", // h2
+    22: "2.2rem", // h3
+    20: "2.0rem", // h4
+    16: "1.6rem", // body
+    14: "1.4rem", // small link, small body
   },
   lineHeight: {
-    14: "1.4rem",
+    28: "2.8rem",
+    24: "2.4rem",
+    22: "2.2rem",
+    20: "2.0rem",
     16: "1.6rem",
+    14: "1.4rem",
   },
   fontWeight: {
     400: "400",
@@ -183,6 +208,9 @@ const commonVars = {
   },
   transform: {
     "-halfY": "translateY(-50%)",
+  },
+  zIndex: {
+    "-1": "-1",
   },
 };
 

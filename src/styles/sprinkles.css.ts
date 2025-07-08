@@ -82,6 +82,9 @@ const unresposiveProperties = defineProperties({
     display: ["flex", "block"],
     position: ["sticky", "relative", "absolute"],
     cursor: ["pointer"],
+    objectFit: ["cover"],
+
+    zIndex: vars.zIndex,
   },
 });
 

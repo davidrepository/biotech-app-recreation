@@ -1,12 +1,10 @@
-import { CSSProperties, ElementType, ReactNode } from "react";
+import { ElementType, ReactNode } from "react";
 
 export interface BoxProps<T extends ElementType = "div"> {
-  as?: T;
+  as?: T | string;
   v?: Record<string, any>;
   s?: Record<string, any>;
-  recipe?: (v: any) => string | undefined;
-  type?: string;
-  className?: string;
-  children: ReactNode;
+  recipe?: (v: any) => string;
+  children?: ReactNode;
   [key: string]: any;
 }

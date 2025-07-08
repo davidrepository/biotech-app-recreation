@@ -1,0 +1,12 @@
+{
+  "heading": "From Lab to Life",
+  "paragraph": "Welcome to Avam, where science transforms from intricate lab discoveries to real-world solutions. As pioneers in research and clinical diagnostics, we’re bridging the gap between scientific innovation and everyday health. Dive into our journey “From Lab to Life” and discover how Avam makes the difference.",
+  "cta": {
+    "label": "Learn More About Us",
+    "href": "#"
+  },
+  "image": {
+    "src": "/images/sunset.svg",
+    "alt": "Hero background"
+  }
+}

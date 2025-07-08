@@ -1,3 +1,2 @@
-export * from "./ui.types";
-export * from "./header.types";
-export * from "./topBar.types";
+export * from "./data";
+export * from "./ui";

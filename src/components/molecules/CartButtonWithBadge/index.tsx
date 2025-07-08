@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { Box, IconButton } from "@/components";
+import { Box, Button } from "@/components";
 import { CartButtonWithBadgeProps } from "./cartButtonWithBadge.types";
 
 export const CartButtonWithBadge = ({ count }: CartButtonWithBadgeProps) => {
   return (
-    <IconButton s={{ position: "relative" }} v={{ type: "link" }}>
+    <Button darkGhost v={{ square: "md" }}>
       <FontAwesomeIcon icon={faCartShopping} />
       <Box
         s={{
@@ -18,6 +18,6 @@ export const CartButtonWithBadge = ({ count }: CartButtonWithBadgeProps) => {
       >
         {count}
       </Box>
-    </IconButton>
+    </Button>
   );
 };
