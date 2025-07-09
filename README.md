@@ -66,3 +66,7 @@ On the backend, I create clear, versioned APIs (REST or GraphQL) so frontend and
 I use Strapi as a headless CMS because it’s flexible and easy to customize. For deployment, I choose Vercel since it integrates seamlessly with Next.js and offers fast, automatic builds and deployments. To ensure my frontend code works well, I rely on Jest and React Testing Library for unit and integration testing, which helps catch bugs early.
 
 For monitoring and maintaining app health, I would set up Sentry to track errors and performance issues in real time, allowing me to respond quickly to any problems. Additionally, I use LogRocket to capture user sessions and behavior.
+
+###
+
+* Commits should follow a more structure format – in this instance, the priority was delivery.
