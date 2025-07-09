@@ -19,10 +19,7 @@ export const BlogSection = () => {
           </H2>
         </Grid.Item>
         <Grid.Item s={{ spanx: ["unset", "2.."] }}>
-          <Grid.Root
-            as="ul"
-            s={{ cols: [1, 2, 3], flexd: "column", gap: [40, 24] }}
-          >
+          <Grid.Root as="ul" s={{ cols: [1, 2, 3], gap: [40, 24] }}>
             {data?.blogs.map((blog, index) => (
               <BlogCard as="li" key={index} blogData={blog} />
             ))}

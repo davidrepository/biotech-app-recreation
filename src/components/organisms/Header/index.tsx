@@ -16,7 +16,7 @@ export const Header = () => {
       as="header"
       outerS={{ position: "sticky", top: 0, py: [16], bgc: "white", zIndex: 2 }}
     >
-      <Flex.Root s={{ jc: "space-between", ai: "center" }}>
+      <Flex.Root s={{ justifyContent: "space-between", alignItems: "center" }}>
         <Flex.Item>
           <LeftSection data={data} />
         </Flex.Item>

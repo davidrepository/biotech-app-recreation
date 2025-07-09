@@ -40,17 +40,19 @@ const responsiveProperties = defineProperties({
 
     transform: vars.transform,
 
-    justifyContent: ["space-between", "center"],
-
-    alignItems: ["center", "flex-start"],
-
     flexDirection: ["row", "column", "row-reverse", "column-reverse"],
 
     gridTemplateColumns: vars.gridTemplateColumns,
     gridColumn: vars.gridSpan,
 
+    alignItems: ["center", "flex-start"],
+    justifyContent: ["space-between", "center"],
+
     aspectRatio: ["1/1"],
+
     flexShrink: [0],
+
+    textAlign: ["left", "center"],
   },
   shorthands: {
     p: ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"],
@@ -76,10 +78,6 @@ const responsiveProperties = defineProperties({
     h: ["height"],
     minh: ["minHeight"],
     maxh: ["maxHeight"],
-
-    jc: ["justifyContent"],
-    ai: ["alignItems"],
-    flexd: ["flexDirection"],
 
     cols: ["gridTemplateColumns"],
     spanx: ["gridColumn"],

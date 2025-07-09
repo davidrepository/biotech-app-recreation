@@ -7,7 +7,7 @@ export const BlogCard = ({ blogData }: BlogProps) => {
     <Card.Root
       s={{
         gap: [24, 24, 32],
-        ai: "flex-start",
+        alignItems: "flex-start",
         flexDirection: "column",
       }}
     >

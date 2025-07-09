@@ -9,7 +9,7 @@ import {
 
 const List = ({ children, vertical }: NavigationListProps) => {
   return (
-    <Flex.Root as="ul" s={{ flexd: vertical ? "row" : "column" }}>
+    <Flex.Root as="ul" s={{ flexDirection: vertical ? "row" : "column" }}>
       {children}
     </Flex.Root>
   );

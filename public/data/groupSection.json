@@ -1,0 +1,29 @@
+{
+  "heading": "The World of Avam Group",
+  "groups": [
+    {
+      "image": {
+        "src": "/images/autex.webp",
+        "alt": "AutEx"
+      },
+      "title": "Avam Sciences",
+      "body": "Avam Sciences advances molecular and microbiology technologies, providing high-quality reagents, consumables, and instruments for research, healthcare, and industry."
+    },
+    {
+      "image": {
+        "src": "/images/avam.webp",
+        "alt": "Avam"
+      },
+      "title": "InMicro Laboratories",
+      "body": "InMicro specializes in microbiology, offering prepared and dehydrated media, along with essential lab consumables for microbial testing and quality control."
+    },
+    {
+      "image": {
+        "src": "/images/dna.webp",
+        "alt": "DNA"
+      },
+      "title": "Ecose Labs",
+      "body": "Ecose focuses on cell culture, delivering optimized media, sera, and consumables for research, bioprocessing, and therapeutic development."
+    }
+  ]
+}

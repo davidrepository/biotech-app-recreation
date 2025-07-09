@@ -21,7 +21,7 @@ export const ProductSection = () => {
           </H2>
         </Grid.Item>
         <Grid.Item s={{ spanx: ["unset", "unset", "2.."] }}>
-          <Flex.Root as="li" s={{ flexd: "column", gap: [20, 20, 40] }}>
+          <Flex.Root as="ul" s={{ flexDirection: "column", gap: [20, 20, 40] }}>
             {data?.products.map((product, index) => (
               <Fragment key={index}>
                 <ProductCard as="li" productData={product} />

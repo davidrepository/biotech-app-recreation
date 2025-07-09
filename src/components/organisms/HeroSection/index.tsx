@@ -16,7 +16,7 @@ export const HeroSection = () => {
         minh: 420,
         position: "relative",
         display: "flex",
-        ai: "center",
+        alignItems: "center",
       }}
       innerS={{
         px: [0, 0, 40],

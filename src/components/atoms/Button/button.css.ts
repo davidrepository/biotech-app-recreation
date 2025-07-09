@@ -70,8 +70,8 @@ export const button = recipe({
         width: 48,
         height: 48,
         display: "flex",
-        jc: "center",
-        ai: "center",
+        justifyContent: "center",
+        alignItems: "center",
       }),
     },
     weight: {

@@ -50,7 +50,7 @@ export const Caption = ({
   ...rest
 }: TypographyProps) => {
   return withDash ? (
-    <Flex.Root s={{ ai: "center", gap: 8 }}>
+    <Flex.Root s={{ alignItems: "center", gap: 8 }}>
       <Box s={{ h: 1, w: 30, bgc: "gray10" }} />
       <Typography as="span" v={{ variant: "caption", ...v }} {...rest}>
         {children}

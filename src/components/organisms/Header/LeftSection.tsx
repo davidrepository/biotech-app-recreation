@@ -6,7 +6,7 @@ export const LeftSection = ({ data }: LeftSectionProps) => {
   const { isLaptop } = useMediaQuery();
 
   return (
-    <Flex.Root s={{ ai: "center", gap: 32 }}>
+    <Flex.Root s={{ alignItems: "center", gap: 32 }}>
       <Flex.Item>
         <Link href="#">
           <Image

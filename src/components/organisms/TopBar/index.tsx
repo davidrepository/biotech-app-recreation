@@ -19,7 +19,7 @@ export const TopBar = () => {
         position: "relative",
       }}
     >
-      <Flex.Root s={{ jc: "space-between" }}>
+      <Flex.Root s={{ justifyContent: "space-between" }}>
         <Link href={data.promo.cta.href} v={{ variant: "lightGhost" }}>
           {data.promo.text} - {data.promo.cta.label}
         </Link>

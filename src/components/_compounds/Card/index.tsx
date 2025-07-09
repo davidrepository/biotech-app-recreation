@@ -12,6 +12,7 @@ const CardImage = ({
   link,
   full,
   href = "#",
+  s,
   ...rest
 }: CardImageProps) => {
   return (
@@ -22,6 +23,7 @@ const CardImage = ({
         position: "relative",
         aspectRatio: "1/1",
         flexShrink: 0,
+        ...s,
       }}
     >
       {link ? (

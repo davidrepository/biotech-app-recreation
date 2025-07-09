@@ -5,3 +5,4 @@ export const OFFER_SECTION_DATA_URL = "/data/offerSection.json";
 export const PRODUCT_SECTION_DATA_URL = "/data/productSection.json";
 export const SERVICE_SECTION_DATA_URL = "/data/serviceSection.json";
 export const BLOG_SECTION_DATA_URL = "/data/blogSection.json";
+export const GROUP_SECTION_DATA_URL = "/data/groupSection.json";

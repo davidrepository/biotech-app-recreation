@@ -12,7 +12,7 @@ export const ServiceSection = () => {
 
   return (
     <Container.Root as="section" s={{ py: [60, 80] }}>
-      <Flex.Root s={{ flexd: "column", gap: [20] }}>
+      <Flex.Root s={{ flexDirection: "column", gap: [20] }}>
         <H2>{data?.heading}</H2>
         <Grid.Root as="ul" s={{ cols: [1, 3] }}>
           {data?.services.map((service, index) => (
