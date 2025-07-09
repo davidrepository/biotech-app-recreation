@@ -1,14 +1,14 @@
 import { Flex, Image, Link, Navigation } from "@/components";
 import { useMediaQuery } from "@/hooks";
-import { LeftSectionProps } from "./header.types";
+import { HeaderDataProps } from "../header.types";
 
-export const LeftSection = ({ data }: LeftSectionProps) => {
+export const LeftSection = ({ data }: HeaderDataProps) => {
   const { isLaptop } = useMediaQuery();
 
   return (
     <Flex.Root s={{ alignItems: "center", gap: 32 }}>
       <Flex.Item>
-        <Link href="#">
+        <Link href="/">
           <Image
             src={data.company.logo.src}
             alt={data.company.logo.alt}

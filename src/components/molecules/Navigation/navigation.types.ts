@@ -1,14 +1,9 @@
-import { ReactNode } from "react";
+import { BoxProps } from "@/types";
 
-export type NavigationListProps = {
-  children: ReactNode;
+export interface NavigationListProps extends BoxProps {
   vertical?: boolean;
-};
+}
 
-export type NavigationItemProps = {
-  children: ReactNode;
-};
+export interface NavigationItemProps extends BoxProps {}
 
-export type NavigationRootProps = {
-  children: ReactNode;
-};
+export interface NavigationRootProps extends BoxProps {}

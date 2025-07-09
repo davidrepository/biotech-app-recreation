@@ -1,5 +1,5 @@
 import { Blog, BoxProps } from "@/types";
 
-export interface BlogProps extends BoxProps {
+export interface BlogDataProps extends BoxProps {
   blogData: Blog;
 }

@@ -58,10 +58,20 @@ export const button = recipe({
         fontSize: 16,
         lineHeight: 16,
         py: 16,
+        px: 16,
         color: {
           light: "gray10",
           dark: "gray10",
           hover: "gray1",
+        },
+      }),
+      darkFlat: s({
+        fontSize: 16,
+        lineHeight: 16,
+        color: {
+          light: "gray10",
+          dark: "gray10",
+          hover: "gray11",
         },
       }),
     },

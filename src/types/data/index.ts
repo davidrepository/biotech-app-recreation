@@ -6,3 +6,4 @@ export * from "./productSection.types";
 export * from "./serviceSection.types";
 export * from "./blogSection.types";
 export * from "./groupSection.types";
+export * from "./footer.types";

@@ -1,13 +1,14 @@
+"use client";
+
 import {
   HeroSection,
   OfferSection,
   ProductSection,
   ServiceSection,
+  BlogSection,
+  GroupSection,
   Separator,
 } from "@/components";
-import { BlogSection } from "@/components/organisms/BlogSection";
-import { GroupSection } from "@/components/organisms/GroupSection";
-
 import "@/styles/global.css";
 
 export default function Home() {

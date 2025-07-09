@@ -1,0 +1,57 @@
+{
+  "company": {
+    "logo": {
+      "src": "/images/biotech-logo-light.png",
+      "alt": "Biotech Light Logo"
+    }
+  },
+  "navigation": [
+    {
+      "label": "Legal & Trademarks",
+      "href": "#"
+    },
+    {
+      "label": "Terms & Conditions",
+      "href": "#"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "#"
+    },
+    {
+      "label": "Returns Policy",
+      "href": "#"
+    },
+    {
+      "label": "FAQs",
+      "href": "#"
+    },
+    {
+      "label": "About Us",
+      "href": "#"
+    },
+    {
+      "label": "Contact",
+      "href": "#"
+    },
+    {
+      "label": "Order Tracking",
+      "href": "#"
+    }
+  ],
+  "copyright": "© 2025 PORTAL MODE. All rights reserved.",
+  "socials": [
+    {
+      "name": "facebook",
+      "href": "https://facebook.com/mycompany"
+    },
+    {
+      "name": "instagram",
+      "href": "https://instagram.com/mycompany"
+    },
+    {
+      "name": "linkedin",
+      "href": "https://linkedin.com/company/mycompany"
+    }
+  ]
+}

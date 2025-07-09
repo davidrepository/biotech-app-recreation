@@ -1,8 +1,8 @@
-import { Link, Card, Lead, P, H3, Caption } from "@/components";
-import { BlogProps } from "./blogSection.types";
+import { Link, Card, Lead, H3, Caption } from "@/components";
 import { formatDate } from "@/helpers";
+import { BlogDataProps } from "../blogSection.types";
 
-export const BlogCard = ({ blogData }: BlogProps) => {
+export const BlogCard = ({ blogData }: BlogDataProps) => {
   return (
     <Card.Root
       s={{

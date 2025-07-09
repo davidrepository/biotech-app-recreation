@@ -1,5 +1,5 @@
 import { HeaderData } from "@/types";
 
-export interface LeftSectionProps {
+export interface HeaderDataProps {
   data: HeaderData;
 }

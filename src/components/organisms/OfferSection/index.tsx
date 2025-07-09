@@ -7,7 +7,7 @@ import { OfferCard } from "./OfferCard";
 export const OfferSection = () => {
   const { data, loading, error } = useOfferSectionData();
 
-  if (loading) return <div>Loading hero section...</div>;
+  if (loading) return null;
   if (error) return <div>Error loading hero section</div>;
 
   return (

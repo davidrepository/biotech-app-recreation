@@ -147,6 +147,7 @@ export const vars = createThemeContract({
     12: "",
   },
   gridSpan: {
+    "1-2": "",
     "2..": "",
     unset: "",
   },
@@ -245,6 +246,7 @@ const commonVars = {
     12: "repeat(12, 1fr)",
   },
   gridSpan: {
+    "1-2": "1 / 3",
     "2..": "2 / -1",
     unset: "unset",
   },

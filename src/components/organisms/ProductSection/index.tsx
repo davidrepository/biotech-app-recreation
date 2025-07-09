@@ -1,10 +1,9 @@
 "use client";
 
-import { Container, Flex, Grid, H2 } from "@/components";
+import { Fragment } from "react";
+import { Container, Flex, Grid, H2, Separator } from "@/components";
 import { useProductSectionData } from "@/hooks";
 import { ProductCard } from "./ProductCard";
-import { Separator } from "@/components/primitives/Separator";
-import { Fragment } from "react";
 
 export const ProductSection = () => {
   const { data, loading, error } = useProductSectionData();

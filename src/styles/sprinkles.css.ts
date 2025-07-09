@@ -40,17 +40,17 @@ const responsiveProperties = defineProperties({
 
     transform: vars.transform,
 
-    flexDirection: ["row", "column", "row-reverse", "column-reverse"],
-
     gridTemplateColumns: vars.gridTemplateColumns,
     gridColumn: vars.gridSpan,
 
-    alignItems: ["center", "flex-start"],
-    justifyContent: ["space-between", "center"],
+    flexDirection: ["row", "column", "row-reverse", "column-reverse"],
+    flexShrink: [0],
+    flexWrap: ["wrap"],
+
+    alignItems: ["flex-start", "center", "flex-end"],
+    justifyContent: ["flex-start", "center", "flex-end", "space-between"],
 
     aspectRatio: ["1/1"],
-
-    flexShrink: [0],
 
     textAlign: ["left", "center"],
   },

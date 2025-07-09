@@ -2,7 +2,7 @@
 
 import { Container, H2, Flex, Grid } from "@/components";
 import { useGroupSectionData } from "@/hooks";
-import { GroupCard } from "./GroupCard";
+import { GroupCard } from "./GroupCard/GroupCard";
 
 export const GroupSection = () => {
   const { data, loading, error } = useGroupSectionData();
@@ -14,7 +14,7 @@ export const GroupSection = () => {
     <Container.Root as="section" s={{ py: [60, 80] }}>
       <Flex.Root s={{ flexDirection: "column", gap: [20] }}>
         <H2>{data?.heading}</H2>
-        <Grid.Root as="ul" s={{ cols: [1, 2], gap: 32 }}>
+        <Grid.Root as="ul" s={{ cols: [1, 2], gap: [20] }}>
           {data?.groups.map((group, index) => (
             <Grid.Item as="li" key={index}>
               <GroupCard groupData={group} />

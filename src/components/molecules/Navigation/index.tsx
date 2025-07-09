@@ -7,9 +7,13 @@ import {
   NavigationItemProps,
 } from "./navigation.types";
 
-const List = ({ children, vertical }: NavigationListProps) => {
+const List = ({ vertical, s, children, ...rest }: NavigationListProps) => {
   return (
-    <Flex.Root as="ul" s={{ flexDirection: vertical ? "row" : "column" }}>
+    <Flex.Root
+      as="ul"
+      s={{ flexDirection: vertical ? "row" : "column", ...s }}
+      {...rest}
+    >
       {children}
     </Flex.Root>
   );

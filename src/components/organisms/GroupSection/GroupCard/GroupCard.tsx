@@ -1,7 +1,7 @@
 import { Card, Lead, P, H3 } from "@/components";
-import { GroupProps } from "./groupSection.types";
+import { GroupDataProps } from "./groupCard.types";
 
-export const GroupCard = ({ groupData, ...rest }: GroupProps) => {
+export const GroupCard = ({ groupData }: GroupDataProps) => {
   return (
     <Card.Root
       s={{
@@ -9,7 +9,6 @@ export const GroupCard = ({ groupData, ...rest }: GroupProps) => {
         alignItems: ["center", "flex-start"],
         flexDirection: ["column", "row"],
       }}
-      {...rest}
     >
       <Card.Image
         src={groupData?.image.src}
@@ -17,7 +16,7 @@ export const GroupCard = ({ groupData, ...rest }: GroupProps) => {
         s={{ w: [160, "40%", "30%"] }}
       />
       <Card.Body>
-        <Lead.Root s={{ gap: 16, alignItems: ["center", "flex-start"] }}>
+        <Lead.Root s={{ gap: 8, alignItems: ["center", "flex-start"] }}>
           <Lead.Head
             s={{ justifyContent: "space-between", alignItems: "center" }}
           >

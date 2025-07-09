@@ -1,5 +1,5 @@
 import { BoxProps, Group } from "@/types";
 
-export interface GroupProps extends BoxProps {
+export interface GroupDataProps extends BoxProps {
   groupData: Group;
 }
