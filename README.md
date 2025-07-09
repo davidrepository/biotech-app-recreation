@@ -51,11 +51,15 @@ For rebuilding the main page, I recommend using Next.js 15 (modern features and 
 
 Additionally, I suggest: TypeScript (type safety), React Testing Library + Jest (testing), ESLint + Prettier (code standards and formatting), and Vercel (easy deployment for Next.js).
 
+#
+
 ### 2. How would you structure the frontend and backend for scalability and maintainability?
 
 On the frontend, I use Next.js because it helps build fast and scalable apps with server-side rendering and static pages. For fetching data, I use SWR—it caches data and updates it automatically, so the app feels fast and fresh. I organize code by features, keep state management simple with Zustand, and use TypeScript to catch errors early.
 
 On the backend, I create clear, versioned APIs (REST or GraphQL) so frontend and backend can grow independently and scale well. I keep the backend modular or use microservices to make it easier to maintain. Next.js works smoothly with these APIs, helping me build scalable and easy-to-maintain full-stack apps.
+
+#
 
 ### 3. What tools (e.g. CMS, deployment, testing, monitoring) would you include in the full setup?
 
