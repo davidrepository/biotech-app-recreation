@@ -2,7 +2,6 @@
 
 - Next.js 15
 - TypeScript
-- Zustand
 - SWR
 - Public JSON mock data
 - Vanilla Extract (Performant CSS)
